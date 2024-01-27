@@ -1,8 +1,8 @@
 <script>
-  
+	import { faqContent } from '$lib/shared';
 </script>
 
-<div class=" w-full  max-w-2xl">
+<div class=" w-full  max-w-2xl px-2">
 	{#each faqContent as faq, i}
 		<div
 			on:click={() => {

@@ -9,7 +9,7 @@
 	class=" flex h-screen w-full flex-col items-center justify-center bg-neutral-100  py-12  lg:py-24"
 >
 	{#if !startQuiz}
-		<Hero />
+		<Hero bind:startQuiz/>
 
 		<Faq />
 	{:else}

@@ -1,3 +1,5 @@
+import { parties } from '$lib/shared';
+
 const blocks = [
 	{
 		title: 'Georgia Dream',
@@ -29,3 +31,5 @@ const blocks = [
 		parties: [{}]
 	}
 ];
+
+export default blocks;

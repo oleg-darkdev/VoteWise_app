@@ -19,13 +19,14 @@ import wings from './data/wings.js';
 import ideologies from './data/ideologies.js';
 // import blocks from './data/blocks.js';
 import questions from './data/quiz/questions.js';
+import faqContent from './data/faq.js';
 
-import StatLine  from './ui/StatLine.svelte';
+import StatLine from './ui/StatLine.svelte';
 
 // blocks,
 export {
-  StatLine,
-
+	StatLine,
+	faqContent,
 	citizens,
 	europeanSocialists,
 	girchi,

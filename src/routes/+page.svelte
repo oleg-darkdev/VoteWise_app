@@ -1,7 +1,8 @@
 <script>
 	import { Quiz, Faq, Hero, Result } from '$lib/widgets';
 
-	let startQuiz = true;
+	let startQuiz = false,
+		quizStep = 0;
 </script>
 
 <section
@@ -12,8 +13,8 @@
 
 		<Faq />
 	{:else}
-		<Quiz>
-			<Result />
+		<Quiz bind:quizStep>
+			<Result bind:startQuiz bind:quizStep />
 		</Quiz>
 	{/if}
 </section>

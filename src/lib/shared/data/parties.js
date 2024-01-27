@@ -14,7 +14,7 @@ import lawAndJustice from './parties/lawAndJustice';
 import nationalDemocraticParty from './parties/nationalDemocraticParty';
 import victoriousGeorgia from './parties/victoriousGeorgia';
 
-export {
+export  {
 	citizens,
 	europeanSocialists,
 	girchi,

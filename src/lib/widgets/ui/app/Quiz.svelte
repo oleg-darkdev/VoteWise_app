@@ -1,7 +1,7 @@
 <script>
 	import { questions } from '$lib/shared';
 
-	let quizStep = 0;
+	export let quizStep;
 </script>
 
 <!-- <div class="flex flex-col w-full mx-auto mb-2 ">

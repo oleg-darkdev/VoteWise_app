@@ -18,13 +18,14 @@ import {
 import wings from './data/wings.js';
 import ideologies from './data/ideologies.js';
 // import blocks from './data/blocks.js';
+import questions from './data/quiz/questions.js';
 
-
-
-
+import StatLine  from './ui/StatLine.svelte';
 
 // blocks,
 export {
+  StatLine,
+
 	citizens,
 	europeanSocialists,
 	girchi,
@@ -41,5 +42,6 @@ export {
 	nationalDemocraticParty,
 	victoriousGeorgia,
 	wings,
-	ideologies
+	ideologies,
+	questions
 };

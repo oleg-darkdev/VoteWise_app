@@ -4,7 +4,7 @@ const party = {
 	logo: 'georgian_dream.svg',
 	since: '2012',
 	title: `Georgian Dream`,
-	ideology: [ideologies],
+	// ideology: [ideologies[0]],
 	lider: {
 		title: 'Irakli Kobakhidze',
 		link: 'https://en.wikipedia.org/wiki/Irakli_Kobakhidze',
@@ -16,12 +16,9 @@ const party = {
 		`Over the years the party's socially conservative positions became more pronounced. `,
 		``
 	],
-	politicalWing: [wings],
+	// politicalWing: [wings[0]],
 	officialLink: 'https://en.wikipedia.org/wiki/Georgian_Dream',
 	slogan: ``
 };
-
-
-
 
 export default party;

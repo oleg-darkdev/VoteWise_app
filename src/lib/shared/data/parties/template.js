@@ -1,7 +1,7 @@
-import { wings, ideologies } from '$lib/shared';
+// import { wings, ideologies } from '$lib/shared';
 
-const party =
+// const party =
 
 
 
-export default party;
+// export default party;

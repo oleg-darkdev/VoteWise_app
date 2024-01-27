@@ -1,7 +1,3 @@
-
-
-
-
 const wings = [
 	{
 		title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -15,3 +11,5 @@ const wings = [
 		link: '/lorem'
 	}
 ];
+
+export default wings;

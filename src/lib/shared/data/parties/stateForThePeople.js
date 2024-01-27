@@ -4,7 +4,7 @@ const party = {
 	logo: `state_for_the_people.png`,
 	since: '2016',
 	title: 'State for the People',
-	ideology: [ideologies],
+	// ideology: [ideologies[0]],
 
 	lider: [
 		{
@@ -16,7 +16,7 @@ const party = {
 	shortDescription:
 		'Founded by operatic bass Paata Burchuladze as an attempt to bring new faces to politics, generally considered to be unsuccessful project. The party was rebranded since then and currently is in coalition with other opposition parties to remove GD from government.',
 	desc: [``, ``, ``],
-	politicalWing: [wings],
+	// politicalWing: [wings[0]],
 	officialLink: 'https://en.wikipedia.org/wiki/State_for_the_People',
 	slogan: ``
 };

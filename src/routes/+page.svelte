@@ -1,6 +1,6 @@
 <script>
-	import { parties, wings, blocks, ideologies } from '$lib/shared';
-
+	import { parties} from '$lib/shared';
+// , wings, blocks, ideologies 
 	console.log(parties);
-	console.log(blocks);
+	// console.log(blocks);export default party
 </script>

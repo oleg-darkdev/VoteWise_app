@@ -4,7 +4,7 @@ const party = {
 	logo: ``,
 	since: '2019',
 	title: 'Victorious Georgia',
-	ideology: [ideologies],
+	// ideology: [ideologies[0]],
 
 	lider: [
 		{
@@ -19,11 +19,9 @@ const party = {
 		``,
 		``
 	],
-	politicalWing: [wings],
+	// politicalWing: [wings[0]],
 	officialLink: 'https://en.wikipedia.org/wiki/Victorious_Georgia',
 	slogan: ``
 };
-
-
 
 export default party;

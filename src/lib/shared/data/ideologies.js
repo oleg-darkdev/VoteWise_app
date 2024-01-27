@@ -16,97 +16,13 @@
 //     Reformism
 // Pro-Europeanism
 
-
-
 const ideologies = [
 	{
 		title: '',
 		link: '',
 		shortDesc: '',
 		desc: ''
-	},
-	{
-		title: '',
-		link: '',
-		shortDesc: '',
-		desc: ''
-	},
-	{
-		title: '',
-		link: '',
-		shortDesc: '',
-		desc: ''
-	},
-	{
-		title: '',
-		link: '',
-		shortDesc: '',
-		desc: ''
-	},
-	{
-		title: '',
-		link: '',
-		shortDesc: '',
-		desc: ''
-	},
-	{
-		title: '',
-		link: '',
-		shortDesc: '',
-		desc: ''
-	},
-	{
-		title: '',
-		link: '',
-		shortDesc: '',
-		desc: ''
-	},
-	{
-		title: '',
-		link: '',
-		shortDesc: '',
-		desc: ''
-	},
-	{
-		title: '',
-		link: '',
-		shortDesc: '',
-		desc: ''
-	},
-	{
-		title: '',
-		link: '',
-		shortDesc: '',
-		desc: ''
-	},
-	{
-		title: '',
-		link: '',
-		shortDesc: '',
-		desc: ''
-	},
-	{
-		title: '',
-		link: '',
-		shortDesc: '',
-		desc: ''
-	},
-	{
-		title: '',
-		link: '',
-		shortDesc: '',
-		desc: ''
-	},
-	{
-		title: '',
-		link: '',
-		shortDesc: '',
-		desc: ''
-	},
-	{
-		title: '',
-		link: '',
-		shortDesc: '',
-		desc: ''
-	},
+	}
 ];
+
+export default ideologies;

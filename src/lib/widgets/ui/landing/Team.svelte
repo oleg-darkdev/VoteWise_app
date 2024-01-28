@@ -4,21 +4,21 @@
 			fullName: 'Davit Totadze',
 			position: 'President of the Human Rights Research Center (HRRC)',
 			workplace: '',
-			link: '/',
+			link: 'https://www.linkedin.com/in/davitotadze?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
 			photo: 'david.png'
 		},
 		{
 			fullName: 'Oleg Medvedev',
-			position: 'Founder 44Games',
+			position: 'Frontend developer / Founder of 44Games',
 			workplace: '',
-			link: '/',
+			link: 'https://www.linkedin.com/in/oleg-darkdev',
 			photo: 'oleg.png'
 		},
 		{
 			fullName: 'Nika Pkhovelishvili',
-			position: 'Product designer',
-			workplace: 'TBC Bank',
-			link: '/',
+			position: 'Product designer in TBC Bank',
+			workplace: '',
+			link: 'https://www.linkedin.com/in/nickolozp?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
 			photo: 'miko.png'
 		}
 	];

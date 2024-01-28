@@ -33,13 +33,11 @@
 	<h1
 		class="max-w-5xl text-2xl font-bold leading-none tracking-tighter text-neutral-600 md:text-5xl lg:max-w-7xl lg:text-6xl"
 	>
-		Lorem ipsum <br class="hidden lg:block" />
-		is placeholder
+		VoteWise  <br class="hidden lg:block" />
 	</h1>
 
 	<p class="mx-auto mt-8 max-w-xl text-center text-base leading-relaxed text-gray-500">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-		labore et dolore magna aliqua.
+		The VoteWise is not a voting recommendation, but rather an information offering about elections and politics.
 	</p>
 
 	<div class="mx-auto mt-6 flex w-full max-w-4xl justify-center gap-2">

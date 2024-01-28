@@ -1,8 +1,7 @@
 const steps = [
 	{
 		id: 1,
-		title:
-			'Lorem ipsum is placeholder text.',
+		title: 'Military service should be mandatory',
 		options: {
 			agree: {
 				value: '',
@@ -18,8 +17,7 @@ const steps = [
 	},
 	{
 		id: 2,
-		title:
-			'Lorem ipsum is placeholder text.',
+		title: 'Student funding should be increased',
 		options: {
 			agree: {
 				value: '',
@@ -35,8 +33,23 @@ const steps = [
 	},
 	{
 		id: 3,
-		title:
-			'Lorem ipsum is placeholder text.',
+		title: 'Income tax should be repealed',
+		options: {
+			agree: {
+				value: '',
+				text: 'Аgree'
+			},
+
+			disagree: {
+				value: '',
+				text: 'Disagree'
+			}
+		},
+		answer: 0
+	},
+	{
+		id: 4,
+		title: 'The defence budget should be increased',
 		options: {
 			agree: {
 				value: '',

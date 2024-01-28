@@ -2,7 +2,7 @@
   export let title, resultsProcents;
 </script>
 
-<div class="mb-4 prose-blue prose lg:w-full w-full rounded-2xl border-2 border-neutral-200 px-4 py-6">
+<div class="mb-4 prose-blue prose lg:w-full hover:bg-neutral-50 w-full rounded-2xl border-2 border-neutral-200 px-4 py-6">
 	<h3 class="text-2xl text-neutral-800">{title}</h3>
 
 	<div class="mb-8 flex h-6 flex-row items-center">

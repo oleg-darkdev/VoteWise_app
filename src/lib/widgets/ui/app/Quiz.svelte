@@ -1,5 +1,7 @@
 <script>
 	import { questions } from '$lib/shared';
+	import { fly } from 'svelte/transition';
+
 
 	export let quizStep;
 </script>
@@ -16,46 +18,57 @@
         <p>Gain traction make it more corporate please we need to harvest synergy effects not enough bandwidth, and we want to empower the team with the right tools and guidance to uplevel our craft and build better nor low-hanging fruit the right info at the right time to the right people.</p>
     </div> -->
 
-<div class="h-screen max-w-3xl">
-	<!-- <figure><img src="https://daisyui.com/images/stock/photo-1494232410401-ad00d5433cfa.jpg" alt="Album"/></figure> -->
-	{#each questions as question, i}
-		{#if i == quizStep}
-			<div class="prose-md prose flex flex-col px-8  text-left ">
-				<div class="mx-auto mb-2 w-[160px] border-b border-gray-200">
-					<div class="-mt-2 flex flex-wrap items-baseline justify-center text-neutral-700">
-						<h5 class="">Question</h5>
-						<p class="mt-1 ml-2">{question.id} / {questions.length}</p>
-					</div>
-				</div>
-				<h3 class="mt-4 text-center text-3xl font-bold text-gray-800">{question.title}</h3>
-
-				<div class="absolute left-0 bottom-6 flex flex-col w-full content-center">
-						<button
-							on:click={() => {
-								quizStep = quizStep + 1;
-							}}
-							class="btn-outline mx-auto btn-primary btn-wide btn mb-4"
-							>{question.options.agree.text}</button
-						>
-						<button
-							on:click={() => {
-								quizStep = quizStep + 1;
-							}}
-							class="btn-outline mx-auto  btn-primary btn-wide btn">{question.options.disagree.text}</button
-						>
-
-						<div class="p-8 mx-auto">
-							<button
-								on:click={() => (quizStep = quizStep + 1)}
-								class="mt-4   inline-flex items-center font-thin text-neutral-800 hover:text-neutral-600 lg:mb-0"
-							>
-								Skip this question »
-							</button>
-						</div>
-				</div>
+<div
+	in:fly={{ x: 50, duration: 2000 }}
+	out:fly={{ x: -50, duration: 10 }}
+	class="h-screen max-w-3xl"
+>
+	{#if questions.length > quizStep}
+	<div class="prose-md prose flex flex-col px-8  text-left ">
+		<div class="mx-auto mb-2 w-[160px] border-b border-gray-200">
+			<div class="-mt-2 flex flex-wrap items-baseline justify-center text-neutral-700">
+				<h5 class="">Question</h5>
+				<p class="mt-1 ml-2">{questions[quizStep].id} / {questions.length}</p>
 			</div>
-		{/if}
-	{/each}
+		</div>
+		{#each questions as question, i}
+			{#if i == quizStep}
+				<h3
+					in:fly={{ x: 50, duration: 2000 }}
+					out:fly={{ x: -50, duration: 10 }}
+					class="mt-4 text-center text-3xl font-bold text-gray-800"
+				>
+					{question.title}
+				</h3>
+			{/if}
+		{/each}
+		<div class="absolute left-0 bottom-6 flex w-full flex-col content-center">
+			<button
+				on:click={() => {
+					quizStep = quizStep + 1;
+				}}
+				class="btn-outline btn-primary btn-wide btn mx-auto mb-4"
+				>{questions[quizStep].options.agree.text}</button
+			>
+			<button
+				on:click={() => {
+					quizStep = quizStep + 1;
+				}}
+				class="btn-outline btn-primary  btn-wide btn mx-auto"
+				>{questions[quizStep].options.disagree.text}</button
+			>
+
+			<div class="mx-auto p-8">
+				<button
+					on:click={() => (quizStep = quizStep + 1)}
+					class="mt-4   inline-flex items-center font-thin text-neutral-800 hover:text-neutral-600 lg:mb-0"
+				>
+					Skip this question »
+				</button>
+			</div>
+		</div>
+	</div>
+	{/if}
 
 	{#if questions.length == quizStep}
 		<slot />

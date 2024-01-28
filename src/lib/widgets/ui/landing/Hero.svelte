@@ -1,8 +1,11 @@
 <script>
+	import { fly } from 'svelte/transition';
+
+
 	export let startQuiz;
 </script>
 
-<div class="mb-28 flex   w-full  max-w-7xl flex-col text-center lg:mb-20">
+<div  class="mb-28 flex   w-full  max-w-7xl flex-col text-center lg:mb-20">
 	<div
 		class="mx-auto mb-5 inline-flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-full bg-gray-50 text-blue-600"
 	>

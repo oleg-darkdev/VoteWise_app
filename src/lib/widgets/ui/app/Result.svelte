@@ -1,6 +1,7 @@
 <script>
 	import ArrowLeft from 'carbon-icons-svelte/lib/ArrowLeft.svelte';
 	import { StatLine } from '$lib/shared';
+	import { fly } from 'svelte/transition';
 
 	const report = [
 		{
@@ -16,13 +17,14 @@
 			resultsProcents: [86, 20]
 		}
 	];
-  
+
 	export let startQuiz;
 </script>
 
-<div class="lg:py-8 lg:px-4">
+<div class="lg:py-8 lg:px-4 max-w-5xl" in:fly={{ x: 50, duration: 2000 }}
+	out:fly={{ x: -50, duration: 10 }}>
 	<div
-		class=" prose-blue prose mx-auto  items-center rounded-t-2xl bg-neutral-200 px-6 py-8  lg:max-w-7xl lg:px-8"
+		class=" prose-blue prose mx-auto  items-center rounded-t-2xl bg-neutral-200 px-6 py-8   lg:px-8"
 	>
 		<button
 			on:click={() => {
@@ -44,7 +46,7 @@
 			</div>
 
 			<div class="flex flex-row justify-between">
-				<div class=" h-[110px]  w-[165px] rounded-2xl  bg-white ">
+				<div class=" h-[110px]  w-[165px] rounded-2xl  bg-white hover:bg-neutral-100">
 					<img
 						src="./images/georgia/parties/georgian_dream.svg"
 						class="mx-auto mt-4 w-12 rounded-full "
@@ -55,7 +57,7 @@
 					</h3>
 				</div>
 
-				<div class=" h-[110px]  w-[165px] rounded-2xl  bg-white ">
+				<div class=" h-[110px]  w-[165px] rounded-2xl  bg-white hover:bg-neutral-100">
 					<img
 						src="./images/georgia/parties/georgian_dream.svg"
 						class="mx-auto mt-4 w-12 rounded-full "

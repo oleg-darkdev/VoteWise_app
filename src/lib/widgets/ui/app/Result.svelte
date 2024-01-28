@@ -3,6 +3,8 @@
 	import ChevronRight from 'carbon-icons-svelte/lib/ChevronRight.svelte';
 
 	import { StatLine } from '$lib/shared';
+	import { DetailedAboutParty } from '$lib/widgets';
+
 	import { fly } from 'svelte/transition';
 
 	const report = [
@@ -21,6 +23,10 @@
 	];
 
 	let showPopUp = false;
+
+  $: selectedParty = {
+
+  }
 
 	export let startQuiz;
 </script>
@@ -47,7 +53,8 @@
 				<h1 class="mb-0 text-neutral-800">Here is your result.</h1>
 				<!-- <h2>A small headline to switch your visitors into users.</h2> -->
 				<p class="text-neutral-700">
-					<span class="font-bold">Following 3 issues</span> show which electoral program of the political party is closest to you
+					<span class="font-bold">Following 3 issues</span> show which electoral program of the political
+					party is closest to you
 				</p>
 			</div>
 			{#if !showPopUp}
@@ -64,8 +71,9 @@
 							Georgian dream <br class="hidden lg:block" />
 
 							<div class="mx-auto mt-2 flex max-w-[80px] flex-row justify-center">
+                <!-- 									on:click={() => (showPopUp = !showPopUp)}
+ -->
 								<button
-									on:click={() => (showPopUp = !showPopUp)}
 									class="-mt-1 mr-2 font-normal text-blue-700"
 									>details
 								</button>
@@ -87,9 +95,10 @@
 							U.N.M.
 							<br class="hidden lg:block" />
 
+              <!-- 									on:click={() => (showPopUp = !showPopUp)}
+ -->
 							<div class="mx-auto mt-2 flex max-w-[80px] flex-row justify-center">
 								<button
-									on:click={() => (showPopUp = !showPopUp)}
 									class="-mt-1 mr-2 font-normal text-blue-700"
 									>details
 								</button>
@@ -99,19 +108,7 @@
 					</div>
 				</div>
 			{:else}
-				<div class="flex w-full flex-row rounded-t-2xl bg-white px-4">
-					<img
-						src="./images/georgia/georgian_dream.png"
-						class=" mt-4 w-16 rounded-full mr-4"
-						alt=""
-					/>
-					<div class="prose-blue prose pt-3">
-						<h3 class=" text-center text-md font-bold text-neutral-800">
-							Georgian dream
-						</h3>
-						<span class='-mt-4'>since 2010</span>
-					</div>
-				</div>
+        <DetailedAboutParty {selectedParty}/>
 			{/if}
 		</div>
 	</div>

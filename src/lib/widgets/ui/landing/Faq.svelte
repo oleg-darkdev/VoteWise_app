@@ -1,7 +1,7 @@
 <script>
 	import { faqContent } from '$lib/shared';
 	import { fly, fade } from 'svelte/transition';
-	import ChevronuP from 'carbon-icons-svelte/lib/ChevronuP.svelte';
+	import ChevronUp from 'carbon-icons-svelte/lib/ChevronUp.svelte';
 	import ChevronDown from 'carbon-icons-svelte/lib/ChevronDown.svelte';
 
 	import { onMount } from 'svelte';
@@ -29,7 +29,7 @@
 					{#if !faq.showFaq}
 						<ChevronDown fill="bg-gray-700" size={24} class="mt-4 mx-auto" />
 					{:else}
-						<ChevronuP fill="bg-gray-700" size={24} class="mt-4 mx-auto" />
+						<ChevronUp fill="bg-gray-700" size={24} class="mt-4 mx-auto" />
 					{/if}
 				</div>
 				{#if faq.showFaq}

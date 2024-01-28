@@ -20,7 +20,7 @@
 		}
 	];
 
-	let showPopUp = true;
+	let showPopUp = false;
 
 	export let startQuiz;
 </script>

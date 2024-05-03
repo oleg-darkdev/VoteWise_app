@@ -1,5 +1,5 @@
 <script>
-	import { Quiz, Faq, Hero, Result, Team } from '$lib/widgets';
+	import { Quiz, Faq, Hero, Result, Team, Footer } from '$lib/widgets';
 
 	let startQuiz = false,
 		quizStep = 0;
@@ -20,3 +20,5 @@
 		</Quiz>
 	{/if}
 </section>
+
+<Footer />

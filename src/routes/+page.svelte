@@ -6,7 +6,7 @@
 </script>
 
 <section
-	class=" flex min-h-screen w-full flex-col items-center justify-center bg-neutral-100  py-12  lg:py-24"
+	class=" flex min-h-screen w-full flex-col items-center justify-center bg-neutral-100  pt-12 pb-12  lg:pt-24 "
 >
 	{#if !startQuiz}
 		<Hero bind:startQuiz />

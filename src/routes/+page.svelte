@@ -21,4 +21,6 @@
 	{/if}
 </section>
 
-<Footer />
+{#if !startQuiz}
+	<Footer />
+{/if}
